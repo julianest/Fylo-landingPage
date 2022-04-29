@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Fylo-landingPage/static/css/main.e6c13ad2.css",
+    "main.js": "/Fylo-landingPage/static/js/main.eba6b6ec.js",
+    "index.html": "/Fylo-landingPage/index.html",
+    "main.e6c13ad2.css.map": "/Fylo-landingPage/static/css/main.e6c13ad2.css.map",
+    "main.eba6b6ec.js.map": "/Fylo-landingPage/static/js/main.eba6b6ec.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.eba6b6ec.js"
+  ]
+}
