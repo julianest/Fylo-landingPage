@@ -1,27 +1,34 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
+// import {css} from "styled-components";
 import { device } from "../helpers/mediaQuerys.js";
 
-const contenedorMixin = css`
-width: '18rem';
-display:flex;
-flex-direction:column;
-color: white;
-justify-content: center;
-align-items:center;
-` 
-const buttonMixin = css` 
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 15px 10px 15px 10px;
-    border:none;
-    border-color:var(--Cyan-inside-call-to-action-gradient);
-    border-radius: 50px;
-    background: var(--Blue-inside-call-to-action-gradient);
-    background: -webkit-linear-gradient(to right, var(--Cyan-inside-call-to-action-gradient), var(--Blue-inside-call-to-action-gradient));
-    background: linear-gradient(to right, var(--Cyan-inside-call-to-action-gradient), var(--Blue-inside-call-to-action-gradient) );
+// const contenedorMixin = css`
+// width: '18rem';
+// display:flex;
+// flex-direction:column;
+// color: white;
+// justify-content: center;
+// align-items:center;
+// ` 
+// const buttonMixin = css` 
+//     color: white;
+//     font-size: 15px;
+//     font-weight: 600;
+//     padding: 15px 10px 15px 10px;
+//     border:none;
+//     border-color:var(--Cyan-inside-call-to-action-gradient);
+//     border-radius: 50px;
+//     background: var(--Blue-inside-call-to-action-gradient);
+//     background: -webkit-linear-gradient(to right, var(--Cyan-inside-call-to-action-gradient), var(--Blue-inside-call-to-action-gradient));
+//     background: linear-gradient(to right, var(--Cyan-inside-call-to-action-gradient), var(--Blue-inside-call-to-action-gradient) );
     
-`
+// `
+// const flexMixin = css` 
+// @media ${device.mobileGeneral}{
+//         width: 80%;
+//         margin-top: 5%;
+//     }
+// `
 export const LogoImg = styled.img`
     @media ${device.mobileGeneral}{
     width:40%;
@@ -37,17 +44,21 @@ export const ContTextSect1 = styled.div`
         padding: 5% 8% 0% 8%;
     }
 `
+
+    /* ${buttonMixin}; */
 export const ButtonSect1 = styled.button`
     margin-top: 3%;
     width: 50%;
-    ${buttonMixin}
+
     @media ${device.mobileGeneral}{
         width: 70%;
     }
 
 `
+
+/* ${contenedorMixin}; */
 export const CardCotene = styled.div`
-${contenedorMixin}
+
 margin:10% 20% 0% 20%;
 text-align:center;
 @media ${device.mobileGeneral}{
@@ -84,8 +95,11 @@ export const ContTextSect3 = styled.div`
     font-size: 13px;
     }
 `
+
+// ${contenedorMixin};
 export const CardContComent = styled.div` 
-${contenedorMixin}
+
+
     background-color: var(--Dark-Blue-testimonials-background);
     margin:10% 10% 10% 10%;
     text-align:start;
@@ -154,8 +168,8 @@ export const InputSend = styled.input`
     }
 
 `
+// ${buttonMixin};
 export const Button2 = styled.button` 
-    ${buttonMixin}
     width: 30%;
     height: 75%;
     @media ${device.mobileGeneral}{
@@ -164,13 +178,6 @@ export const Button2 = styled.button`
         margin-top: 5%;
     }
 `
-const flexMixin = css` 
-@media ${device.mobileGeneral}{
-        width: 80%;
-        margin-top: 5%;
-    }
-`
-
 export const ContainerFooter = styled.div` 
     display:flex;
     flex-direction:row;
@@ -184,33 +191,40 @@ export const ContainerFooter = styled.div`
     width: 100%;
     }
 `
-
+    // ${flexMixin};
 export const Location = styled.div` 
     display:flex;
     flex-direction: row;
     width: 25%;
     font-size: 12px;
-    ${flexMixin};
+
 
 `
 
+// ${flexMixin};
 export const Contacto = styled.div`
     width: 22%;
     font-size: 12px;
-    ${flexMixin};
+    
 `
+
+// ${flexMixin};
 export const About = styled.div`
     width: 17.5%;
     list-style: none;
-    ${flexMixin};
+    
 `
+
+    // ${flexMixin};
 export const ContactUs = styled.div`
     width: 17.5%;
-    ${flexMixin};
+
 `
+
+    // ${flexMixin};
 export const Icons = styled.div`
     display:flex;
     justify-content: space-evenly;
     width: 18%;
-    ${flexMixin};
+
 `
