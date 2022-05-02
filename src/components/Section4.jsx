@@ -39,13 +39,11 @@ return (
                     <ConteProfileGeneral>
                     <ImgProfile src={list.imgUrl} alt="Imagenes de Personas" />
                         <div>
-                            <span style={{border: "1px dashed red", fontSize:"1em"}}>{list.name}</span>
+                            <span style={{fontSize:"1em"}}>{list.name}</span>
                             <br />
-                            <span style={{border: "1px dashed red", fontSize:"0.8em"}}>{list.charge}</span>
+                            <span style={{fontSize:"0.8em"}}>{list.charge}</span>
                         </div>
-
                     </ConteProfileGeneral>
-                    
                 </CardContComent>
                 </Col>
             ))}

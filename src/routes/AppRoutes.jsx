@@ -5,8 +5,10 @@ import Section1 from "../components/Section1";
 import Section2 from "../components/Section2";
 import Section3 from "../components/Section3";
 import Section4 from "../components/Section4";
-import Comillas from "https://res.cloudinary.com/docutv7ug/image/upload/v1651421918/Fylo-LandingPage/bg-quotes_uynkod.png";
-
+import comillas from "../styles/comillas.png";
+import Section5 from "../components/Section5";
+import logo from "../styles/logo.svg";
+import FooterP from "../components/Footer";
 
 function App() {
   return (
@@ -15,8 +17,11 @@ function App() {
         <Section1/>
         <Section2/>
         <Section3/>
-        <Comillas/>
+        <img src={comillas} alt="Comillas" className="comillas"/>
         <Section4/>
+        <Section5/>
+        <img src={logo} alt="logo" className="logoFooter"/>
+        <FooterP/>
     </>
   );
 }

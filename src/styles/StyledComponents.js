@@ -1,7 +1,6 @@
 import styled, {css} from "styled-components";
 import { device } from "../helpers/mediaQuerys.js";
 
-
 const contenedorMixin = css`
 width: '18rem';
 display:flex;
@@ -10,6 +9,19 @@ color: white;
 justify-content: center;
 align-items:center;
 ` 
+const buttonMixin = css` 
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 15px 10px 15px 10px;
+    border:none;
+    border-color:var(--Cyan-inside-call-to-action-gradient);
+    border-radius: 50px;
+    background: var(--Blue-inside-call-to-action-gradient);
+    background: -webkit-linear-gradient(to right, var(--Cyan-inside-call-to-action-gradient), var(--Blue-inside-call-to-action-gradient));
+    background: linear-gradient(to right, var(--Cyan-inside-call-to-action-gradient), var(--Blue-inside-call-to-action-gradient) );
+    
+`
 export const LogoImg = styled.img`
     @media ${device.mobileGeneral}{
     width:40%;
@@ -27,17 +39,8 @@ export const ContTextSect1 = styled.div`
 `
 export const ButtonSect1 = styled.button`
     margin-top: 3%;
-    width: 40%;
-    color: white;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 15px 10px 15px 10px;
-    border:none;
-    border-color:var(--Cyan-inside-call-to-action-gradient);
-    border-radius: 50px;
-    background: var(--Blue-inside-call-to-action-gradient);
-    background: -webkit-linear-gradient(to right, var(--Cyan-inside-call-to-action-gradient), var(--Blue-inside-call-to-action-gradient));
-    background: linear-gradient(to right, var(--Cyan-inside-call-to-action-gradient), var(--Blue-inside-call-to-action-gradient) );
+    width: 50%;
+    ${buttonMixin}
     @media ${device.mobileGeneral}{
         width: 70%;
     }
@@ -83,12 +86,11 @@ export const ContTextSect3 = styled.div`
 `
 export const CardContComent = styled.div` 
 ${contenedorMixin}
-background-color: var(--Dark-Blue-testimonials-background);
-margin:10% 10% 10% 10%;
-text-align:start;
-padding: 8% 5% 5% 3%;
-font-size:10px;
-border: 1px dashed red;
+    background-color: var(--Dark-Blue-testimonials-background);
+    margin:10% 10% 10% 10%;
+    text-align:start;
+    padding: 8% 5% 5% 3%;
+    font-size:10px;
 @media ${device.mobileGeneral}{
     margin:5% 10% 0% 10%;
     font-size:12px;
@@ -109,7 +111,106 @@ width:12%;
 height: 12%;
 border-radius: 50%;
 `
+export const ConteSect5 = styled.div`
+    margin: 15% 12% 10% 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+`
+export const ContSect5FindBoton = styled.div`
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+`
+export const FormInput = styled.form` 
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    height: 80%;
+@media ${device.mobileGeneral}{
+    flex-wrap:wrap;
+    width: 100%;
+    }
 
+`
+export const InputSend = styled.input` 
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: gray;
+    border-radius: 40px;
+    padding:3%;
+    margin-right: 5%;
+    width: 70%;
+    height: 30px;
+    @media ${device.mobileGeneral}{
+        width: 100%;
+        padding: 20px;
+        text-align:center;
+        margin-right: 0%;
+    }
 
+`
+export const Button2 = styled.button` 
+    ${buttonMixin}
+    width: 30%;
+    height: 75%;
+    @media ${device.mobileGeneral}{
+        width: 100%;
+        padding: 10px;
+        margin-top: 5%;
+    }
+`
+const flexMixin = css` 
+@media ${device.mobileGeneral}{
+        width: 80%;
+        margin-top: 5%;
+    }
+`
 
-// border: 1px dashed red;
+export const ContainerFooter = styled.div` 
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5%;
+    width: 100%;
+    color: white;
+@media ${device.mobileGeneral}{
+    flex-direction: column;
+    width: 100%;
+    }
+`
+
+export const Location = styled.div` 
+    display:flex;
+    flex-direction: row;
+    width: 25%;
+    font-size: 12px;
+    ${flexMixin};
+
+`
+
+export const Contacto = styled.div`
+    width: 22%;
+    font-size: 12px;
+    ${flexMixin};
+`
+export const About = styled.div`
+    width: 17.5%;
+    list-style: none;
+    ${flexMixin};
+`
+export const ContactUs = styled.div`
+    width: 17.5%;
+    ${flexMixin};
+`
+export const Icons = styled.div`
+    display:flex;
+    justify-content: space-evenly;
+    width: 18%;
+    ${flexMixin};
+`
