@@ -1,6 +1,7 @@
 # Explicacion Proyecto:
 
 Esta Landing Page se realiza intentando ser lo mas parecido posible a la maqueta enviada, esto con el fin de evidenciar el uso de estilos y componentes en la pagina.
+La maqueta se diseño de forma responsive.
 
 ## Este proyecto fue creado con:
 
